@@ -1,17 +1,16 @@
 import { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
+export const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+};
 
 export default function AboutMe() {
-  const ScrollToTop = () => {
-    // Extracts pathname property(key) from an object
-    const { pathname } = useLocation();
-
-    // Automatically scrolls to top whenever pathname changes
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, [pathname]);
-  };
-
   return (
     <div className="container about-container">
       <div>
@@ -61,7 +60,7 @@ export default function AboutMe() {
         }}
       >
         <p>Check out my projects </p>
-        <Link
+        <NavLink
           to={"/projects"}
           style={{ marginLeft: "10px", marginTop: "7px" }}
           onClick={ScrollToTop}
@@ -83,7 +82,7 @@ export default function AboutMe() {
               d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
             />
           </svg>
-        </Link>
+        </NavLink>
       </div>
 
       <div>

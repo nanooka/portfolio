@@ -1,7 +1,10 @@
 import shopImage from "../assets/shopping.png";
 import todoListImage from "../assets/todolist.png";
-import usePopcornImage from "../assets/usepopcorn.png";
+// import usePopcornImage from "../assets/usepopcorn.png";
+import calculatorImage from "../assets/calculator.png";
 import Card from "../components/Card";
+import { Link } from "react-router-dom";
+import { ScrollToTop } from "./AboutMe";
 
 export default function Projects() {
   return (
@@ -53,7 +56,7 @@ export default function Projects() {
         technologies={["React", "TypeScript", "CSS"]}
       />
 
-      <div className="card">
+      {/* <div className="card">
         <div>
           <h3>UsePopcorn</h3>
           <img src={usePopcornImage} className="img" alt="preview" />
@@ -81,6 +84,53 @@ export default function Projects() {
             <div className="used-technologies">CSS</div>
           </div>
         </div>
+      </div> */}
+      <Card
+        title="Calculator"
+        img={{ src: calculatorImage, alt: "Calculator preview" }}
+        describe="This is a simple calculator web application with responsive design. There are Addition, subtraction, multiplication, and division operations. Styling is from Figma.com"
+        live="https://master--peaceful-centaur-f4582a.netlify.app/"
+        repo="https://github.com/nanooka/calculator-react"
+        backRepo={null}
+        technologies={["React", "TypeScript", "CSS"]}
+      />
+      <p style={{ marginTop: "60px" }}>
+        See my simple game in scratch:{" "}
+        <a href="https://scratch.mit.edu/projects/789893487/" target="_blank">
+          https://scratch.mit.edu/projects/789893487/
+        </a>
+      </p>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          marginTop: "-30px",
+        }}
+      >
+        <p>See my older projects built with JavaScript </p>
+        <Link
+          to={"/archive"}
+          style={{ marginLeft: "10px", marginTop: "7px" }}
+          onClick={ScrollToTop}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            className="bi bi-box-arrow-in-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+            />
+          </svg>
+        </Link>
       </div>
     </div>
   );
