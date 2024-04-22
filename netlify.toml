@@ -13,12 +13,12 @@
 
   #[[redirects]]
   #  from = "/"
-  #  to = "/projects"
+  #  to = "/projects".tsx
   #  status = 200
 
   #[[redirects]]
   #  from = "/projects"
-  #  to = "/archive"
+  #  to = "/archive.tsx"
   #  status = 200
 
   ## (optional) Settings for Netlify Dev
