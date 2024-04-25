@@ -1,6 +1,5 @@
 import shopImage from "../assets/shopping.png";
 import todoListImage from "../assets/todolist.png";
-// import usePopcornImage from "../assets/usepopcorn.png";
 import calculatorImage from "../assets/calculator.png";
 import Card from "../components/Card";
 import { Link } from "react-router-dom";
@@ -55,36 +54,6 @@ export default function Projects() {
         backRepo={null}
         technologies={["React", "TypeScript", "CSS"]}
       />
-
-      {/* <div className="card">
-        <div>
-          <h3>UsePopcorn</h3>
-          <img src={usePopcornImage} className="img" alt="preview" />
-        </div>
-        <div>
-          <p className="describe">
-            This is project about movies. You can search movies, rate them, add
-            them to your favorite list and they will be set in your
-            localstorage.
-          </p>
-          <span style={{ display: "block" }}>
-            Live:{" "}
-            <a href={"http://usepopcorn.io/"} target="_blank">
-              http://usepopcorn.io/
-            </a>
-          </span>
-          <span style={{ display: "block" }}>
-            Repository:{" "}
-            <a href={"https://github.com/nanooka/usepopcorn"} target="_bank">
-              https://github.com/nanooka/usepopcorn
-            </a>
-          </span>
-          <div>
-            <div className="used-technologies">ReactJS</div>
-            <div className="used-technologies">CSS</div>
-          </div>
-        </div>
-      </div> */}
       <Card
         title="Calculator"
         img={{ src: calculatorImage, alt: "Calculator preview" }}
