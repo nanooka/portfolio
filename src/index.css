@@ -148,6 +148,8 @@ li::marker {
   height: 20px;
   padding: 8px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: white;
+  color: #242424;
 }
 .email-form input[type="submit"] {
   margin-top: 8px;
