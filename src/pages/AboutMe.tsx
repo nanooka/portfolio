@@ -91,6 +91,7 @@ export default function AboutMe() {
         <a
           href="https://certificates.cs50.io/f6e4bbb1-65b3-40aa-88d8-d47ca72298f4.pdf?size=letter"
           target="_blank"
+          style={{ whiteSpace: "normal", overflowWrap: "break-word" }}
         >
           https://certificates.cs50.io/f6e4bbb1-65b3-40aa-88d8-d47ca72298f4.pdf?size=letter
         </a>
@@ -100,6 +101,7 @@ export default function AboutMe() {
           href="https://www.freecodecamp.org/certification/nanooka/responsive-web-design
 "
           target="_blank"
+          style={{ whiteSpace: "normal", overflowWrap: "break-word" }}
         >
           https://www.freecodecamp.org/certification/nanooka/responsive-web-design
         </a>

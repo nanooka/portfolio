@@ -102,9 +102,13 @@ li::marker {
 .archive-card h3 {
   text-align: center;
 }
-.archive-card .img {
+/* .archive-card .img {
   max-height: 250px;
   width: auto;
+} */
+
+.archive-card .img {
+  width: 100%;
 }
 
 .img {
@@ -133,6 +137,8 @@ li::marker {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  /* margin: 1rem; */
 }
 
 .email-form {
@@ -276,6 +282,7 @@ a.active {
   .contact-container {
     flex-direction: row;
     gap: 300px;
+    /* margin: 1rem; */
   }
   .email-form {
     display: flex;
@@ -290,5 +297,9 @@ a.active {
     grid-template-columns: 1fr 1fr;
     gap: 100px;
     margin: 3rem;
+  }
+  .archive-card .img {
+    max-height: 250px;
+    width: auto;
   }
 }
