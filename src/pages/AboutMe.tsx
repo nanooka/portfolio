@@ -32,7 +32,7 @@ export default function AboutMe() {
             <li>Vite</li>
             <li>EmailJS</li>
           </ul>
-          <ul style={{ marginTop: "-16px" }}>
+          <ul className="skills-ul-2">
             <li>Node JS</li>
             <li>Express</li>
             <li>MongoDB</li>

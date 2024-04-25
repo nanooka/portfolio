@@ -58,6 +58,10 @@ li::marker {
   flex-direction: column;
 }
 
+.skills-ul-2 {
+  margin-top: -16px;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -246,6 +250,9 @@ a.active {
     display: flex;
     gap: 100px;
     flex-direction: row;
+  }
+  .skills-ul-2 {
+    margin-top: 16px;
   }
 
   .navbar {
