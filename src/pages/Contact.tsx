@@ -63,7 +63,7 @@ export default function Contact() {
           boxShadow: "rgba(99, 99, 99) 0px 1px 4px",
           padding: "20px",
           margin: "20px",
-          width: "50%",
+          width: "60%",
           marginTop: "110px",
         }}
       >

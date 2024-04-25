@@ -32,7 +32,7 @@ export default function AboutMe() {
             <li>Vite</li>
             <li>EmailJS</li>
           </ul>
-          <ul>
+          <ul style={{ marginTop: "-16px" }}>
             <li>Node JS</li>
             <li>Express</li>
             <li>MongoDB</li>
@@ -96,12 +96,16 @@ export default function AboutMe() {
           https://certificates.cs50.io/f6e4bbb1-65b3-40aa-88d8-d47ca72298f4.pdf?size=letter
         </a>
         <br></br>
+        <br></br>
         <b>FreeCodeCamp Certificate: </b>
         <a
           href="https://www.freecodecamp.org/certification/nanooka/responsive-web-design
 "
           target="_blank"
-          style={{ whiteSpace: "normal", overflowWrap: "break-word" }}
+          style={{
+            whiteSpace: "normal",
+            overflowWrap: "break-word",
+          }}
         >
           https://www.freecodecamp.org/certification/nanooka/responsive-web-design
         </a>
