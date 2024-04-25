@@ -71,8 +71,10 @@ li::marker {
 }
 
 .archive-container {
-  display: grid;
-  grid-template-columns: 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr; */
+  display: flex;
+  flex-direction: column;
   gap: 80px;
   margin: 2rem;
 }

@@ -65,7 +65,11 @@ export default function Projects() {
       />
       <p style={{ marginTop: "60px" }}>
         See my simple game in scratch:{" "}
-        <a href="https://scratch.mit.edu/projects/789893487/" target="_blank">
+        <a
+          href="https://scratch.mit.edu/projects/789893487/"
+          target="_blank"
+          style={{ whiteSpace: "normal", overflowWrap: "break-word" }}
+        >
           https://scratch.mit.edu/projects/789893487/
         </a>
       </p>
