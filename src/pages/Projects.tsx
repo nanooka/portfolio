@@ -20,7 +20,7 @@ export default function Projects() {
               target="_blank"
               className="anchor"
             >
-              Face Store API
+              Fake Store API
             </a>{" "}
             to store products. I used JWT for authentication for log in. When
             user registers, user's password is saved encrypted, so you can
