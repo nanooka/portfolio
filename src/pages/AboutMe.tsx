@@ -69,6 +69,7 @@ export default function AboutMe() {
             gap: "10px",
           }}
           onClick={ScrollToTop}
+          className="link-to-projects"
         >
           <p style={{ display: "inline" }}>Check out my projects </p>
           <svg
@@ -95,6 +96,7 @@ export default function AboutMe() {
         <p style={{ color: "#319c89" }}>Certificates: </p>
         {/* <b>Harvard CS50x Certificate: </b> */}
         <a
+          className="certificate-link"
           href="https://certificates.cs50.io/f6e4bbb1-65b3-40aa-88d8-d47ca72298f4.pdf?size=letter"
           target="_blank"
           style={{ whiteSpace: "normal", overflowWrap: "break-word" }}
@@ -104,6 +106,7 @@ export default function AboutMe() {
         <br></br>
         <br></br>
         <a
+          className="certificate-link"
           href="https://www.freecodecamp.org/certification/nanooka/responsive-web-design
 "
           target="_blank"

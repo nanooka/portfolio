@@ -27,7 +27,7 @@ const Card: React.FC<CardProps> = ({
       </div>
       <div>
         <p className="describe">{describe}</p>
-        <a href={repo} target="_bank">
+        <a href={repo} target="_bank" className="repo">
           {backRepo && (
             <span>
               <b>Front-end </b>
@@ -53,7 +53,7 @@ const Card: React.FC<CardProps> = ({
         </a>
         <br></br>
         {backRepo !== null ? (
-          <a href={backRepo} target="_bank">
+          <a className="repo" href={backRepo} target="_bank">
             <b>Back-end repository</b>
             <svg
               xmlns="http://www.w3.org/2000/svg"

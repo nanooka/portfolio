@@ -82,6 +82,7 @@ export default function Contact() {
         </svg>
         <span style={{ color: "#319c89" }}> : "</span>
         <a
+          className="contact-link"
           href="https://github.com/nanooka"
           target="_blank"
           style={{ whiteSpace: "normal", overflowWrap: "break-word" }}
@@ -104,6 +105,7 @@ export default function Contact() {
         </svg>
         <span style={{ color: "#319c89" }}> : "</span>
         <a
+          className="contact-link"
           href="https://www.linkedin.com/in/nanuka-grdzelishvili/"
           target="_blank"
           style={{ whiteSpace: "normal", overflowWrap: "break-word" }}
@@ -136,6 +138,7 @@ export default function Contact() {
         </svg>
         <span style={{ color: "#319c89" }}> : "</span>
         <a
+          className="contact-link"
           href="https://leetcode.com/u/nanooka/"
           target="_blank"
           style={{ whiteSpace: "normal", overflowWrap: "break-word" }}

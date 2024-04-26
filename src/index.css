@@ -175,7 +175,7 @@ li::marker {
 }
 .email-form input[type="submit"] {
   margin-top: 8px;
-  height: 38px;
+  height: 40px;
   width: 105%;
   cursor: pointer;
   background-color: #319c89;
@@ -183,7 +183,15 @@ li::marker {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
+  border: 1.5px solid #319c89;
 }
+.email-form input[type="submit"]:hover {
+  background-color: #242424;
+  color: #319c89;
+  border-inline-start: 3px solid #319c89;
+  border-inline-end: 3px solid #319c89;
+}
+
 .email-form label {
   color: #319c89;
   font-size: 16px;
@@ -199,6 +207,24 @@ a:hover {
 }
 a.active {
   color: #319c89;
+}
+
+.link-to-projects {
+  transition: 0.3s;
+}
+.link-to-projects:hover {
+  /* margin-left: 12px; */
+  transform: translateX(5%);
+}
+
+.repo:hover {
+  margin-left: 12px;
+}
+
+.certificate-link:hover,
+.contact-link:hover {
+  font-size: 17px;
+  line-height: 0;
 }
 
 /* @media (prefers-color-scheme: dark) {

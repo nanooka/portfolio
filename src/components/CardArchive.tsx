@@ -26,7 +26,7 @@ const CardArchive: React.FC<CardArchiveProps> = ({
           width: "100%",
         }}
       >
-        <a href={repo} target="_bank">
+        <a href={repo} target="_bank" className="repo">
           Repository{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
