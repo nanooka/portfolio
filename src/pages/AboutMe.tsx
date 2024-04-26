@@ -59,12 +59,18 @@ export default function AboutMe() {
           justifyContent: "center",
         }}
       >
-        <p>Check out my projects </p>
         <Link
           to={"/projects"}
-          style={{ marginLeft: "10px", marginTop: "7px" }}
+          style={{
+            marginLeft: "10px",
+            marginTop: "7px",
+            display: "flex",
+            alignItems: "center",
+            gap: "10px",
+          }}
           onClick={ScrollToTop}
         >
+          <p style={{ display: "inline" }}>Check out my projects </p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
