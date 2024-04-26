@@ -19,13 +19,13 @@ const CardArchive: React.FC<CardArchiveProps> = ({
       </div>
       <div>
         <span style={{ display: "block" }}>
-          Live:{" "}
+          <b style={{ color: "#319c89" }}>Live:</b>{" "}
           <a href={live} target="_blank">
             {live}
           </a>
         </span>
         <span style={{ display: "block" }}>
-          repository:{" "}
+          <b style={{ color: "#319c89" }}>repository:</b>{" "}
           <a href={repo} target="_bank">
             {repo}
           </a>

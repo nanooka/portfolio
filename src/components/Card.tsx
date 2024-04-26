@@ -26,21 +26,21 @@ const Card: React.FC<CardProps> = ({
       <div>
         <p className="describe">{describe}</p>
         <span style={{ display: "block" }}>
-          Live:{" "}
+          <b style={{ color: "#319c89" }}>Live:</b>{" "}
           <a href={live} target="_blank">
             {live}
           </a>
         </span>
         <span style={{ display: "block" }}>
-          {backRepo && <span>Front-end </span>}
-          repository:{" "}
+          {backRepo && <b style={{ color: "#319c89" }}>Front-end </b>}
+          <b style={{ color: "#319c89" }}>repository:</b>{" "}
           <a href={repo} target="_bank">
             {repo}
           </a>
         </span>
         {backRepo !== null ? (
           <span style={{ display: "block" }}>
-            Back-end repository:{" "}
+            <b style={{ color: "#319c89" }}>Back-end repository:</b>{" "}
             <a href={backRepo} target="_bank">
               {backRepo}
             </a>
