@@ -17,19 +17,18 @@ const CardArchive: React.FC<CardArchiveProps> = ({
         <h3>{title}</h3>
         <img src={img.src} className="img" alt={img.alt} />
       </div>
-      <div>
-        <span style={{ display: "block" }}>
-          <b style={{ color: "#319c89" }}>Live:</b>{" "}
-          <a href={live} target="_blank">
-            {live}
-          </a>
-        </span>
-        <span style={{ display: "block" }}>
-          <b style={{ color: "#319c89" }}>repository:</b>{" "}
-          <a href={repo} target="_bank">
-            {repo}
-          </a>
-        </span>
+      <div
+        style={{
+          display: "flex",
+          gap: "60px",
+        }}
+      >
+        <a href={live} target="_blank">
+          Live
+        </a>
+        <a href={repo} target="_bank">
+          Repository
+        </a>
       </div>
     </div>
   );

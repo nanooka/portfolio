@@ -86,18 +86,17 @@ export default function AboutMe() {
       </div>
 
       <div>
-        <p>Certificates: </p>
-        <b>Harvard CS50x Certificate: </b>
+        <p style={{ color: "#319c89" }}>Certificates: </p>
+        {/* <b>Harvard CS50x Certificate: </b> */}
         <a
           href="https://certificates.cs50.io/f6e4bbb1-65b3-40aa-88d8-d47ca72298f4.pdf?size=letter"
           target="_blank"
           style={{ whiteSpace: "normal", overflowWrap: "break-word" }}
         >
-          https://certificates.cs50.io/f6e4bbb1-65b3-40aa-88d8-d47ca72298f4.pdf?size=letter
+          <b>Harvard CS50x Certificate</b>
         </a>
         <br></br>
         <br></br>
-        <b>FreeCodeCamp Certificate: </b>
         <a
           href="https://www.freecodecamp.org/certification/nanooka/responsive-web-design
 "
@@ -107,7 +106,7 @@ export default function AboutMe() {
             overflowWrap: "break-word",
           }}
         >
-          https://www.freecodecamp.org/certification/nanooka/responsive-web-design
+          <b>FreeCodeCamp Certificate</b>
         </a>
       </div>
 
