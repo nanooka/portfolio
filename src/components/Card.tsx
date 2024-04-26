@@ -21,8 +21,16 @@ const Card: React.FC<CardProps> = ({
     <div className="card">
       <div>
         <h3>{title}</h3>
-        <a href={live} target="_blank">
-          <img src={img.src} className="img" alt={img.alt} />
+        <a
+          href={live}
+          target="_blank"
+          style={{ position: "relative" }}
+          className="img-link"
+        >
+          <div className="img-div-color"></div>
+          <div>
+            <img src={img.src} className="img" alt={img.alt} />
+          </div>
         </a>
       </div>
       <div>
