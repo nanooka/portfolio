@@ -69,6 +69,15 @@ li::marker {
   box-shadow: 0 4px 2px -2px rgba(99, 99, 99, 0.7);
   padding: 1.5rem 5rem;
 }
+.navlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.nanooka {
+  display: none;
+}
 
 .container {
   margin: 1rem;
@@ -257,7 +266,15 @@ a.active {
   }
 
   .navbar {
-    justify-content: flex-end;
+    justify-content: space-between;
+  }
+  .nanooka {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 20px;
+    margin-left: 3rem;
+    /* cursor: pointer; */
   }
   .card {
     flex-direction: row;
