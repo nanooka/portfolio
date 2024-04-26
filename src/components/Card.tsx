@@ -25,26 +25,67 @@ const Card: React.FC<CardProps> = ({
       </div>
       <div>
         <p className="describe">{describe}</p>
-        <span style={{ display: "block" }}>
-          <b style={{ color: "#319c89" }}>Live:</b>{" "}
-          <a href={live} target="_blank">
-            {live}
-          </a>
-        </span>
-        <span style={{ display: "block" }}>
-          {backRepo && <b style={{ color: "#319c89" }}>Front-end </b>}
-          <b style={{ color: "#319c89" }}>repository:</b>{" "}
-          <a href={repo} target="_bank">
-            {repo}
-          </a>
-        </span>
-        {backRepo !== null ? (
-          <span style={{ display: "block" }}>
-            <b style={{ color: "#319c89" }}>Back-end repository:</b>{" "}
-            <a href={backRepo} target="_bank">
-              {backRepo}
-            </a>
+        <a href={live} target="_blank">
+          <b>Live </b>{" "}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            className="bi bi-arrow-right-short"
+            viewBox="0 0 16 16"
+            style={{ position: "absolute" }}
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+            />
+          </svg>
+        </a>
+        <br></br>
+        <a href={repo} target="_bank">
+          {backRepo && (
+            <span>
+              <b>Front-end </b>
+            </span>
+          )}
+          <span>
+            <b>Repository </b>{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              className="bi bi-arrow-right-short"
+              viewBox="0 0 16 16"
+              style={{ position: "absolute" }}
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+              />
+            </svg>
           </span>
+        </a>
+        <br></br>
+        {backRepo !== null ? (
+          <a href={backRepo} target="_bank">
+            <b>Back-end repository</b>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              className="bi bi-arrow-right-short"
+              viewBox="0 0 16 16"
+              style={{ position: "absolute" }}
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+              />
+            </svg>
+          </a>
         ) : null}
         <div>
           {technologies.map((tech) => (
