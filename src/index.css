@@ -19,10 +19,10 @@ a {
   text-decoration: inherit;
   transition: 0.3s;
 }
-a:hover,
+/* a:hover,
 a:active {
   color: #319c89;
-}
+} */
 
 body {
   margin: 0;
@@ -209,7 +209,9 @@ a:hover {
 a.active {
   color: #319c89;
 }
-
+#nanooka-tags {
+  color: white;
+}
 .link-to-projects {
   transition: 0.3s;
 }
