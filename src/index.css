@@ -155,6 +155,7 @@ li::marker {
   border-radius: 12px;
   border: 1px solid #319c89;
   margin: 20px 10px 0 0;
+  cursor: pointer;
 }
 
 .contact-container {

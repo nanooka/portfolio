@@ -44,12 +44,10 @@ export default function AboutMe() {
       </div>
 
       <p style={{ fontSize: "19px", marginTop: "100px" }}>
-        I am a junior developer enthusiastic about coding and problem-solving. I
-        have very small experience, however I’m super motivated to start my
-        career as a developer. I’ve completed Harvard CS50x course. also I
-        studied at a non-certified, but very good training place called Bitcamp,
-        where I had a mentor who helped me to learn the basics of programming.
-        And now I am studying by myself and am trying to be better every day.
+        I am a frontend developer enthusiastic about coding and problem-solving.
+        I’ve completed Harvard CS50x course. also I studied at a non-certified,
+        but very good training place called Bitcamp. And now I am studying by
+        myself and am trying to be better every day.
       </p>
 
       <div
