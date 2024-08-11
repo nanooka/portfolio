@@ -16,7 +16,10 @@ export default function AboutMe() {
       <div>
         <p>Hi, I'm</p>
         <h1>Nanuka Grdzelishvili</h1>
-        <p>A React developer who loves making cool and simple websites.</p>
+        <p>
+          A Frontend developer who loves making cool, plain and user-friendly
+          websites.
+        </p>
       </div>
 
       <div>
@@ -25,11 +28,13 @@ export default function AboutMe() {
         </p>
         <div className="skills-list">
           <ul>
-            <li>React</li>
+            <li>ReactJS</li>
+            <li>React+Vite</li>
+            <li>NextJS</li>
             <li>TypeScript</li>
             <li>CSS</li>
             <li>Bootstrap</li>
-            <li>Vite</li>
+            <li>Tailwind</li>
             <li>EmailJS</li>
           </ul>
           <ul className="skills-ul-2">
@@ -39,15 +44,16 @@ export default function AboutMe() {
             <li>Postman</li>
             <li>REST client</li>
             <li>Git/Github</li>
+            <li>Docker</li>
           </ul>
         </div>
       </div>
 
       <p style={{ fontSize: "19px", marginTop: "100px" }}>
-        I am a frontend developer enthusiastic about coding and problem-solving.
-        I’ve completed Harvard CS50x course. also I studied at a non-certified,
-        but very good training place called Bitcamp. And now I am studying by
-        myself and am trying to be better every day.
+        I am a Frontend Developer enthusiastic about coding. I have created many
+        of my own projects and also I have experience in teamwork. I absorb new
+        technologies easily and I’m good at problem-solving. I’m trying to learn
+        something new every day to be better and better.
       </p>
 
       <div

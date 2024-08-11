@@ -1,6 +1,7 @@
 import shopImage from "../assets/shopping.png";
 import todoListImage from "../assets/todolist.png";
 import calculatorImage from "../assets/calculator.png";
+import youtubeImage from "../assets/youtube-image.png";
 import Card from "../components/Card";
 import { Link } from "react-router-dom";
 import { ScrollToTop } from "./AboutMe";
@@ -9,6 +10,33 @@ export default function Projects() {
   return (
     <div className="container">
       <h2>Latest projects</h2>
+      <Card
+        title="Youtube clone"
+        img={{ src: youtubeImage, alt: "youtube preview" }}
+        describe={
+          <p className="describe">
+            This is Youtube clone, the most complexed project of my own works. I
+            used real Youtube data from Google Cloud. In this project I used
+            nextJS and Docker for the first time.
+          </p>
+        }
+        live="https://github.com/nanooka/youtube-clone-frontend"
+        repo="https://github.com/nanooka/youtube-clone-frontend"
+        backRepo="https://github.com/nanooka/youtube-clone-backend"
+        docker="https://github.com/nanooka/youtube-clone-docker"
+        technologies={[
+          "NextJS",
+          "TypeScript",
+          "CSS",
+          "NodeJS",
+          "Express",
+          "MongoDB",
+          "Mongoose",
+          "Docker",
+          "Google Cloud",
+        ]}
+      />
+
       <Card
         title="E-commerce website"
         img={{ src: shopImage, alt: "E-commerce website preview" }}
@@ -32,16 +60,17 @@ export default function Projects() {
         live="https://online-shop-nanooka.netlify.app/"
         repo="https://github.com/nanooka/online-shopping"
         backRepo="https://github.com/nanooka/online-shopping-backend"
+        docker={null}
         technologies={[
-          "React",
+          "ReactJS",
           "React-Router",
+          "Vite",
           "TypeScript",
           "Bootstrap",
-          "Node js",
+          "NodeJS",
           "Express",
           "MongoDB",
           "Mongoose",
-          "REST",
         ]}
       />
       <Card
@@ -52,6 +81,7 @@ export default function Projects() {
         live="https://todo-list-nanooka.netlify.app/"
         repo="https://github.com/nanooka/todo-list-react"
         backRepo={null}
+        docker={null}
         technologies={["React", "TypeScript", "CSS"]}
       />
       <Card
@@ -61,6 +91,7 @@ export default function Projects() {
         live="https://master--peaceful-centaur-f4582a.netlify.app/"
         repo="https://github.com/nanooka/calculator-react"
         backRepo={null}
+        docker={null}
         technologies={["React", "TypeScript", "CSS"]}
       />
       <div
