@@ -11,13 +11,33 @@ export const ScrollToTop = () => {
 };
 
 export default function AboutMe() {
+  const skills = [
+    "NextJS",
+    "CSS",
+    "MongoDB",
+    "TypeScript",
+    "Bootstrap",
+    "Postman",
+    "React+Vite",
+    "Tailwind",
+    "REST client",
+    "React/Redux",
+    "EmailJS",
+    "Git/Github",
+    "React Query",
+    "Node JS",
+    "Docker",
+    "TanStack",
+    "Express",
+  ];
+
   return (
     <div className="container about-container">
       <div>
         <p>Hi, I'm</p>
         <h1>Nanuka Grdzelishvili</h1>
         <p>
-          A Frontend developer who loves making cool, plain and user-friendly
+          A Frontend developer who loves making plain and user-friendly
           websites.
         </p>
       </div>
@@ -26,34 +46,19 @@ export default function AboutMe() {
         <p style={{ color: "#319c89", marginLeft: "38px", marginTop: "60px" }}>
           Skills:
         </p>
-        <div className="skills-list">
-          <ul>
-            <li>ReactJS</li>
-            <li>React+Vite</li>
-            <li>NextJS</li>
-            <li>TypeScript</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-            <li>Tailwind</li>
-            <li>EmailJS</li>
-          </ul>
-          <ul className="skills-ul-2">
-            <li>Node JS</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-            <li>Postman</li>
-            <li>REST client</li>
-            <li>Git/Github</li>
-            <li>Docker</li>
-          </ul>
-        </div>
+
+        <ul className="skills-grid">
+          {skills.map((skill, index) => (
+            <li key={index}>{skill}</li>
+          ))}
+        </ul>
       </div>
 
       <p style={{ fontSize: "19px", marginTop: "100px" }}>
         I am a Frontend Developer enthusiastic about coding. I have created many
         of my own projects and also I have experience in teamwork. I absorb new
         technologies easily and I’m good at problem-solving. I’m trying to learn
-        something new every day to be better and better.
+        something new every day to be better and better...
       </p>
 
       <div
