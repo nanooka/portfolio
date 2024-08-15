@@ -20,7 +20,7 @@ export default function AboutMe() {
     "Postman",
     "React+Vite",
     "Tailwind",
-    "REST client",
+    "RESTclient",
     "React/Redux",
     "EmailJS",
     "Git/Github",
@@ -43,9 +43,7 @@ export default function AboutMe() {
       </div>
 
       <div>
-        <p style={{ color: "#319c89", marginLeft: "38px", marginTop: "60px" }}>
-          Skills:
-        </p>
+        <p className="skills-p">Skills:</p>
 
         <ul className="skills-grid">
           {skills.map((skill, index) => (

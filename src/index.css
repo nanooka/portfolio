@@ -39,6 +39,11 @@ h2 {
 p {
   font-size: 1.5em;
 }
+.skills-p {
+  color: #219c89;
+  margin-left: 38px;
+  margin-top: 60px;
+}
 
 li {
   float: left;
@@ -223,6 +228,15 @@ a.active {
 .contact-link:hover {
   font-size: 17px;
   line-height: 0;
+}
+
+@media (max-width: 360px) {
+  li {
+    margin-left: -22px;
+  }
+  .skills-p {
+    margin-left: 0px;
+  }
 }
 
 @media (min-width: 768px) {
