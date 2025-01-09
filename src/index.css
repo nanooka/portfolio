@@ -173,7 +173,10 @@ li::marker {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: white;
   color: #242424;
+  resize: vertical;
+  max-height: 100px;
 }
+
 .email-form input[type="submit"] {
   margin-top: 8px;
   height: 40px;
