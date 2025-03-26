@@ -11,26 +11,6 @@ export const ScrollToTop = () => {
 };
 
 export default function AboutMe() {
-  const skills = [
-    "NextJS",
-    "CSS",
-    "MongoDB",
-    "TypeScript",
-    "Bootstrap",
-    "Postman",
-    "React+Vite",
-    "Tailwind",
-    "RESTclient",
-    "React/Redux",
-    "EmailJS",
-    "Git/Github",
-    "React Query",
-    "Node JS",
-    "Docker",
-    "TanStack",
-    "Express",
-  ];
-
   return (
     <div className="container about-container">
       <div>
@@ -45,11 +25,47 @@ export default function AboutMe() {
       <div>
         <p className="skills-p">Skills:</p>
 
-        <ul className="skills-grid">
-          {skills.map((skill, index) => (
-            <li key={index}>{skill}</li>
-          ))}
-        </ul>
+        <div className="skills-container">
+          <div className="skills-section">
+            <span>Frontend</span>
+            <ul>
+              <li>React-Vite</li>
+              <li>React Query</li>
+              <li>Next.js</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SASS</li>
+              <li>Tailwind</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+
+          <div className="skills-section">
+            <span>Backend</span>
+            <ul>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>Mongoose</li>
+              <li>Prisma</li>
+              <li>RESTful API</li>
+              <li>Socket.io</li>
+              <li>JWT</li>
+              <li>bcrypt</li>
+            </ul>
+          </div>
+
+          <div className="skills-section">
+            <span>Tools</span>
+            <ul>
+              <li>Git/Github</li>
+              <li>Postman</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <p style={{ fontSize: "19px", marginTop: "100px" }}>
@@ -101,7 +117,6 @@ export default function AboutMe() {
 
       <div>
         <p style={{ color: "#319c89" }}>Certificates: </p>
-        {/* <b>Harvard CS50x Certificate: </b> */}
         <a
           className="certificate-link"
           href="https://certificates.cs50.io/f6e4bbb1-65b3-40aa-88d8-d47ca72298f4.pdf?size=letter"
@@ -110,22 +125,7 @@ export default function AboutMe() {
         >
           <b>Harvard CS50x Certificate</b>
         </a>
-        <br></br>
-        <br></br>
-        <a
-          className="certificate-link"
-          href="https://www.freecodecamp.org/certification/nanooka/responsive-web-design
-"
-          target="_blank"
-          style={{
-            whiteSpace: "normal",
-            overflowWrap: "break-word",
-          }}
-        >
-          <b>FreeCodeCamp Certificate</b>
-        </a>
       </div>
-
       <div className="green-circle"></div>
       <div className="white-circle"></div>
     </div>

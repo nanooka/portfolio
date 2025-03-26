@@ -1,7 +1,6 @@
 import shopImage from "../assets/shopping.png";
 import todoListImage from "../assets/todolist.png";
 import calculatorImage from "../assets/calculator.png";
-import youtubeImage from "../assets/youtube-image.png";
 import Card from "../components/Card";
 import { Link } from "react-router-dom";
 import { ScrollToTop } from "./AboutMe";
@@ -10,33 +9,6 @@ export default function Projects() {
   return (
     <div className="container">
       <h2>Latest projects</h2>
-      <Card
-        title="Youtube clone"
-        img={{ src: youtubeImage, alt: "youtube preview" }}
-        describe={
-          <p className="describe">
-            This is Youtube clone, the most complexed project of my own works. I
-            used real Youtube data from Google Cloud. In this project I used
-            nextJS and Docker for the first time.
-          </p>
-        }
-        live="https://github.com/nanooka/youtube-clone-frontend"
-        repo="https://github.com/nanooka/youtube-clone-frontend"
-        backRepo="https://github.com/nanooka/youtube-clone-backend"
-        docker="https://github.com/nanooka/youtube-clone-docker"
-        technologies={[
-          "NextJS",
-          "TypeScript",
-          "CSS",
-          "NodeJS",
-          "Express",
-          "MongoDB",
-          "Mongoose",
-          "Docker",
-          "Google Cloud",
-        ]}
-      />
-
       <Card
         title="E-commerce website"
         img={{ src: shopImage, alt: "E-commerce website preview" }}

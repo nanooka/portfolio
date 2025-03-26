@@ -54,9 +54,18 @@ li::marker {
   color: #319c89;
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.skills-container {
+  display: flex;
+}
+
+.skills-section ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-section span {
+  color: #319c89;
+  margin-left: 40px;
 }
 
 .navbar {
@@ -234,6 +243,9 @@ a.active {
 }
 
 @media (max-width: 360px) {
+  .skills-section span {
+    margin-left: 0;
+  }
   li {
     margin-left: -22px;
   }
@@ -282,10 +294,6 @@ a.active {
   }
   li {
     float: none;
-  }
-
-  .skills-grid {
-    grid-template-columns: repeat(3, 240px);
   }
 
   .navbar {
