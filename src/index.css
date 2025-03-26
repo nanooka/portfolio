@@ -18,6 +18,7 @@ a {
   color: rgba(255, 255, 255, 0.87);
   text-decoration: inherit;
   transition: 0.3s;
+  min-width: max-content;
 }
 
 body {
@@ -39,6 +40,7 @@ h2 {
 p {
   font-size: 1.5em;
 }
+
 .skills-p {
   color: #219c89;
   margin-left: 38px;
@@ -251,6 +253,12 @@ a.active {
   }
   .skills-p {
     margin-left: 0px;
+  }
+}
+
+@media (max-width: 460px) {
+  .main {
+    flex-direction: column;
   }
 }
 

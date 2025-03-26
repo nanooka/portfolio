@@ -25,36 +25,38 @@ export default function AboutMe() {
       <div>
         <p className="skills-p">Skills:</p>
 
-        <div className="skills-container">
-          <div className="skills-section">
-            <span>Frontend</span>
-            <ul>
-              <li>React-Vite</li>
-              <li>React Query</li>
-              <li>Next.js</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>SASS</li>
-              <li>Tailwind</li>
-              <li>Bootstrap</li>
-            </ul>
-          </div>
+        <div className="skills-container main">
+          <div className="skills-container">
+            <div className="skills-section">
+              <span>Frontend</span>
+              <ul>
+                <li>React-Vite</li>
+                <li>React Query</li>
+                <li>Next.js</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SASS</li>
+                <li>Tailwind</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
 
-          <div className="skills-section">
-            <span>Backend</span>
-            <ul>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>MongoDB</li>
-              <li>Mongoose</li>
-              <li>Prisma</li>
-              <li>RESTful API</li>
-              <li>Socket.io</li>
-              <li>JWT</li>
-              <li>bcrypt</li>
-            </ul>
+            <div className="skills-section">
+              <span>Backend</span>
+              <ul>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>Mongoose</li>
+                <li>Prisma</li>
+                <li>RESTful API</li>
+                <li>Socket.io</li>
+                <li>JWT</li>
+                <li>bcrypt</li>
+              </ul>
+            </div>
           </div>
 
           <div className="skills-section">
