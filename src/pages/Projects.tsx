@@ -27,7 +27,7 @@ export default function Projects() {
             (still in building process)
           </p>
         }
-        live="https://real-estate-nanooka.netlify.app"
+        live="https://prime-estate-nanooka.netlify.app"
         repo="https://github.com/nanooka/real-estate"
         backRepo={null}
         docker={null}
