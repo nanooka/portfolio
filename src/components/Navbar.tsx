@@ -1,10 +1,6 @@
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
-  // const handleRefreshClick = () => {
-  //   window.scrollTo(0, 0);
-  //   window.location.reload();
-  // };
   return (
     <div className="navbar">
       <NavLink to={"/"}>

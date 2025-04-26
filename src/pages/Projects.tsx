@@ -5,102 +5,114 @@ import Card from "../components/Card";
 import { Link } from "react-router-dom";
 import { ScrollToTop } from "./AboutMe";
 import primeEstateImage from "../assets/prime-estate.png";
+import AnimatedSection from "../components/AnimatedSection";
 
 export default function Projects() {
   return (
     <div className="container">
       <h2>Latest projects</h2>
-      <Card
-        title="PrimeEstate"
-        img={{ src: primeEstateImage, alt: "PrimeEstate website preview" }}
-        describe={
-          <p className="describe">
-            A full-stack real estate platform with a responsive UI and
-            light/dark theme support. Users can sign up securely with
-            email/password using <b>JWT</b> or log in via{" "}
-            <b>Google OAuth 2.0 </b>
-            (Google Cloud Console). Passwords are hashed with <b>bcrypt</b> for
-            strong security. Properties can be filtered by location, price,
-            area, and type (rent/sale). Users can view listings on a dynamic
-            <b> React Leaflet</b> map, post their own, chat with authors in real
-            time via<b> Socket.IO</b>, or just save favorites to a wishlist.
-            (still in building process)
-          </p>
-        }
-        live="https://prime-estate-nanooka.netlify.app"
-        repo="https://github.com/nanooka/real-estate"
-        backRepo={null}
-        docker={null}
-        technologies={[
-          "React+Vite",
-          "React-Router",
-          "Node.js",
-          "Express",
-          "MongoDB",
-          "Prisma",
-          "SCSS",
-          "JWT",
-          "Bcrypt",
-          "Socket.IO",
-          "Google OAuth",
-        ]}
-      />
-      <Card
-        title="E-commerce website"
-        img={{ src: shopImage, alt: "E-commerce website preview" }}
-        describe={
-          <p className="describe">
-            This is my first full-stack project. I used{" "}
-            <a
-              href={"https://fakestoreapi.com/products"}
-              target="_blank"
-              className="anchor"
-            >
-              Fake Store API
-            </a>{" "}
-            to store products. I used <b>JWT</b> for authentication for log in.
-            When user registers, user's password is saved encrypted, so you can
-            register safely. User can add products to cart and also to favorite
-            list and see them later. Users, their cart items, and favorite
-            products are saved in <b>MongoDB</b>. The design is mine.
-          </p>
-        }
-        live="https://online-shop-nanooka.netlify.app/"
-        repo="https://github.com/nanooka/online-shopping"
-        backRepo="https://github.com/nanooka/online-shopping-backend"
-        docker={null}
-        technologies={[
-          "React+Vite",
-          "React-Router",
-          "TypeScript",
-          "Bootstrap",
-          "Node.js",
-          "Express",
-          "MongoDB",
-          "Mongoose",
-        ]}
-      />
-      <Card
-        title="Todo List"
-        img={{ src: todoListImage, alt: "Todo List preview" }}
-        describe="This is simple Todo List with localstorage. You can add, edit and
+      <AnimatedSection>
+        <Card
+          title="PrimeEstate"
+          img={{ src: primeEstateImage, alt: "PrimeEstate website preview" }}
+          describe={
+            <p className="describe">
+              A full-stack real estate platform with a responsive UI and
+              light/dark theme support. Users can sign up securely with
+              email/password using <b>JWT</b> or log in via{" "}
+              <b>Google OAuth 2.0 </b>
+              (Google Cloud Console). Passwords are hashed with <b>
+                bcrypt
+              </b>{" "}
+              for strong security. Properties can be filtered by location,
+              price, area, and type (rent/sale). Users can view listings on a
+              dynamic
+              <b> React Leaflet</b> map, post their own, chat with authors in
+              real time via<b> Socket.IO</b>, or just save favorites to a
+              wishlist. (still in building process)
+            </p>
+          }
+          live="https://prime-estate-nanooka.netlify.app"
+          repo="https://github.com/nanooka/real-estate"
+          backRepo={null}
+          docker={null}
+          technologies={[
+            "React+Vite",
+            "React-Router",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Prisma",
+            "SCSS",
+            "JWT",
+            "Bcrypt",
+            "Socket.IO",
+            "Google OAuth",
+          ]}
+        />
+      </AnimatedSection>
+      <AnimatedSection>
+        <Card
+          title="E-commerce website"
+          img={{ src: shopImage, alt: "E-commerce website preview" }}
+          describe={
+            <p className="describe">
+              This is my first full-stack project. I used{" "}
+              <a
+                href={"https://fakestoreapi.com/products"}
+                target="_blank"
+                className="anchor"
+              >
+                Fake Store API
+              </a>{" "}
+              to store products. I used <b>JWT</b> for authentication for log
+              in. When user registers, user's password is saved encrypted, so
+              you can register safely. User can add products to cart and also to
+              favorite list and see them later. Users, their cart items, and
+              favorite products are saved in <b>MongoDB</b>. The design is mine.
+            </p>
+          }
+          live="https://online-shop-nanooka.netlify.app/"
+          repo="https://github.com/nanooka/online-shopping"
+          backRepo="https://github.com/nanooka/online-shopping-backend"
+          docker={null}
+          technologies={[
+            "React+Vite",
+            "React-Router",
+            "TypeScript",
+            "Bootstrap",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Mongoose",
+          ]}
+        />
+      </AnimatedSection>
+      <AnimatedSection>
+        <Card
+          title="Todo List"
+          img={{ src: todoListImage, alt: "Todo List preview" }}
+          describe="This is simple Todo List with localstorage. You can add, edit and
         delete todos, also mark as done. design is mine."
-        live="https://todo-list-nanooka.netlify.app/"
-        repo="https://github.com/nanooka/todo-list-react"
-        backRepo={null}
-        docker={null}
-        technologies={["React", "TypeScript", "CSS"]}
-      />
-      <Card
-        title="Calculator"
-        img={{ src: calculatorImage, alt: "Calculator preview" }}
-        describe="This is a simple calculator web application with responsive design. There are Addition, subtraction, multiplication, and division operations. Styling is from Figma.com"
-        live="https://master--peaceful-centaur-f4582a.netlify.app/"
-        repo="https://github.com/nanooka/calculator-react"
-        backRepo={null}
-        docker={null}
-        technologies={["React", "TypeScript", "CSS"]}
-      />
+          live="https://todo-list-nanooka.netlify.app/"
+          repo="https://github.com/nanooka/todo-list-react"
+          backRepo={null}
+          docker={null}
+          technologies={["React", "TypeScript", "CSS"]}
+        />
+      </AnimatedSection>
+      <AnimatedSection>
+        <Card
+          title="Calculator"
+          img={{ src: calculatorImage, alt: "Calculator preview" }}
+          describe="This is a simple calculator web application with responsive design. There are Addition, subtraction, multiplication, and division operations. Styling is from Figma.com"
+          live="https://master--peaceful-centaur-f4582a.netlify.app/"
+          repo="https://github.com/nanooka/calculator-react"
+          backRepo={null}
+          docker={null}
+          technologies={["React", "TypeScript", "CSS"]}
+        />
+      </AnimatedSection>
       <div
         style={{
           display: "flex",

@@ -1,10 +1,12 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useTypewriter } from "../useTypewriter";
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
   const [name, setName] = useState<string>("");
   const [textarea, setTextarea] = useState<string>("");
+  const placeholder = useTypewriter("Type your message here...", 80);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -52,21 +54,14 @@ export default function Contact() {
         />
         <label>Message</label>
         <textarea
+          placeholder={placeholder}
           name="message"
           value={textarea}
           onChange={(e) => setTextarea(e.target.value)}
         />
         <input type="submit" value="Send" />
       </form>
-      <div
-        style={{
-          boxShadow: "rgba(99, 99, 99) 0px 1px 4px",
-          padding: "20px",
-          margin: "20px",
-          width: "60%",
-          marginTop: "110px",
-        }}
-      >
+      <div className="contact-info">
         <span style={{ color: "#319c89" }}>{"{"}</span>
         <br></br>
         <br></br>

@@ -122,6 +122,10 @@ li::marker {
   text-align: center;
 }
 
+.card h3 {
+  color: #319c89;
+}
+
 .archive-card .img {
   width: 100%;
 }
@@ -158,6 +162,12 @@ li::marker {
   border: 1px solid #319c89;
   margin: 20px 10px 0 0;
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.used-technologies:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .contact-container {
@@ -165,6 +175,55 @@ li::marker {
   flex-direction: column;
   align-items: center;
   margin: 0;
+}
+
+.contact-info {
+  box-shadow: rgba(99, 99, 99) 0px 1px 4px;
+  padding: 20px;
+  margin: 20px;
+  width: 60%;
+  margin-top: 110px;
+}
+
+.contact-info {
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(99, 99, 99) 0px 1px 4px;
+
+  transition: transform 0.3s ease;
+}
+
+.contact-info::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 100%
+  );
+  transform: rotate(25deg);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.contact-info:hover::before {
+  animation: sweep 1s ease-out forwards;
+  opacity: 1;
+}
+
+@keyframes sweep {
+  0% {
+    transform: translate(-100%, -100%) rotate(25deg);
+  }
+  100% {
+    transform: translate(100%, 100%) rotate(25deg);
+  }
 }
 
 .email-form {

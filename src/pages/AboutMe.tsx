@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { useTypewriter } from "../useTypewriter";
+import { motion } from "framer-motion";
+import AnimatedSection from "../components/AnimatedSection";
 
 export const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -11,15 +14,28 @@ export const ScrollToTop = () => {
 };
 
 export default function AboutMe() {
+  const typeText = useTypewriter(
+    "A Frontend developer who loves making plain and user-friendly websites.",
+    80
+  );
+
   return (
     <div className="container about-container">
       <div>
         <p>Hi, I'm</p>
-        <h1>Nanuka Grdzelishvili</h1>
-        <p>
-          A Frontend developer who loves making plain and user-friendly
-          websites.
-        </p>
+        <AnimatedSection>
+          <h1>Nanuka Grdzelishvili</h1>
+        </AnimatedSection>
+
+        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+          {typeText}
+          <motion.span
+            animate={{ opacity: [0, 1, 0] }}
+            transition={{ repeat: Infinity, duration: 1 }}
+          >
+            |
+          </motion.span>
+        </motion.p>
       </div>
 
       <div>
