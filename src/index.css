@@ -72,10 +72,8 @@ li::marker {
 
 .navbar {
   display: flex;
-  /* justify-content: center; */
   justify-content: space-between;
   align-items: center;
-  /* gap: 40px; */
   box-shadow: 0 4px 2px -2px rgba(99, 99, 99, 0.7);
   padding: 1.5rem 5rem;
 }
@@ -87,20 +85,15 @@ li::marker {
 }
 
 .menuIcon {
-  font-size: 18px;
+  font-size: 28px;
   cursor: pointer;
   transition: 0.3s;
   z-index: 100;
-  /* display: none; */
 }
 
 .menuIcon.open {
   color: #242424;
 }
-
-/* .hamburger {
-  display: none;
-} */
 
 .hamburger {
   position: fixed;
@@ -126,7 +119,7 @@ li::marker {
 
 .hamburger a:hover,
 .hamburger a.active {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.67);
 }
 
 .hamburger.open {
@@ -139,27 +132,20 @@ li::marker {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Shadow effect */
-  display: none; /* Hidden by default */
-  z-index: 5; /* Ensure the overlay is below the hamburger menu */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 5;
 }
 
 .overlay.open {
-  display: block; /* Show the overlay when the menu is open */
+  display: block;
 }
 
-.menuIcon:hover {
-  color: #319c89;
-}
-/* .nanooka {
-  display: none;
-} */
 .nanooka {
   display: flex;
   align-items: center;
   gap: 3px;
   font-size: 20px;
-  /* margin-left: 3rem; */
 }
 
 .container {
@@ -226,6 +212,20 @@ li::marker {
 
 .describe {
   font-size: 1.2rem;
+}
+
+.describe b,
+.describe a {
+  transition: 0.2s;
+}
+
+.describe a:hover {
+  text-decoration: underline;
+}
+
+.describe b:hover,
+.describe a:hover {
+  color: #319c89;
 }
 
 .used-technologies {
@@ -362,7 +362,6 @@ a.active {
   color: white;
 }
 .link-to-projects {
-  /* transition: 0.3s; */
   display: flex;
   align-items: center;
   gap: 10px;
@@ -370,7 +369,6 @@ a.active {
 
 .svg-icon {
   transition: 0.2s;
-  margin-top: 6px;
 }
 .link-to-projects:hover .svg-icon {
   transform: translateX(15%);
@@ -405,15 +403,18 @@ a.active {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-bottom: 50px;
+  }
   .navbar {
     padding: 0 1.5rem;
   }
   .navlinks {
-    display: none; /* Hide the large screen links */
+    display: none;
   }
 
   .menuIcon {
-    display: block; /* Show the hamburger menu */
+    display: block;
   }
 }
 
@@ -422,10 +423,6 @@ a.active {
     margin: 6rem;
   }
 
-  .anchor:hover {
-    color: white;
-    text-decoration: underline;
-  }
   .menuIcon,
   .hamburger {
     display: none;
@@ -463,16 +460,6 @@ a.active {
     float: none;
   }
 
-  /* .navbar {
-    justify-content: space-between;
-  } */
-  /* .nanooka {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    font-size: 20px;
-    margin-left: 3rem;
-  } */
   .card {
     flex-direction: row;
     margin-top: 80px;

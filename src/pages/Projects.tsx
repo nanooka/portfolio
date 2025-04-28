@@ -16,7 +16,7 @@ export default function Projects() {
           title="PrimeEstate"
           img={{ src: primeEstateImage, alt: "PrimeEstate website preview" }}
           describe={
-            <p className="describe">
+            <span className="describe">
               A full-stack real estate platform with a responsive UI and
               light/dark theme support. Users can sign up securely with
               email/password using <b>JWT</b> or log in via{" "}
@@ -30,7 +30,7 @@ export default function Projects() {
               <b> React Leaflet</b> map, post their own, chat with authors in
               real time via<b> Socket.IO</b>, or just save favorites to a
               wishlist. (still in building process)
-            </p>
+            </span>
           }
           live="https://prime-estate-nanooka.netlify.app"
           repo="https://github.com/nanooka/real-estate"
@@ -56,13 +56,9 @@ export default function Projects() {
           title="E-commerce website"
           img={{ src: shopImage, alt: "E-commerce website preview" }}
           describe={
-            <p className="describe">
+            <span className="describe">
               This is my first full-stack project. I used{" "}
-              <a
-                href={"https://fakestoreapi.com/products"}
-                target="_blank"
-                className="anchor"
-              >
+              <a href={"https://fakestoreapi.com/products"} target="_blank">
                 Fake Store API
               </a>{" "}
               to store products. I used <b>JWT</b> for authentication for log
@@ -70,7 +66,7 @@ export default function Projects() {
               you can register safely. User can add products to cart and also to
               favorite list and see them later. Users, their cart items, and
               favorite products are saved in <b>MongoDB</b>. The design is mine.
-            </p>
+            </span>
           }
           live="https://online-shop-nanooka.netlify.app/"
           repo="https://github.com/nanooka/online-shopping"
@@ -114,8 +110,8 @@ export default function Projects() {
         />
       </AnimatedSection>
 
-      <a
-        href="https://scratch.mit.edu/projects/789893487/"
+      <Link
+        to="https://scratch.mit.edu/projects/789893487/"
         target="_blank"
         style={{
           display: "flex",
@@ -125,7 +121,7 @@ export default function Projects() {
         }}
         className="link-to-projects"
       >
-        <p>See my simple game in scratch </p>
+        <p>See my simple game in Scratch </p>
         <div className="svg-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -136,19 +132,20 @@ export default function Projects() {
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"
             />
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
             />
           </svg>
         </div>
-      </a>
+      </Link>
+      <br />
 
       <Link to={"/archive"} onClick={ScrollToTop} className="link-to-projects">
-        <p>See my older projects built with JavaScript </p>
+        <p>See my early JavaScript projects</p>
         <div className="svg-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -159,11 +156,11 @@ export default function Projects() {
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"
             />
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
             />
           </svg>
