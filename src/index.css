@@ -72,8 +72,10 @@ li::marker {
 
 .navbar {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  /* justify-content: center; */
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 40px; */
   box-shadow: 0 4px 2px -2px rgba(99, 99, 99, 0.7);
   padding: 1.5rem 5rem;
 }
@@ -83,8 +85,81 @@ li::marker {
   align-items: center;
   gap: 40px;
 }
-.nanooka {
+
+.menuIcon {
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 100;
+  /* display: none; */
+}
+
+.menuIcon.open {
+  color: #242424;
+}
+
+/* .hamburger {
   display: none;
+} */
+
+.hamburger {
+  position: fixed;
+  top: 0;
+  right: -50%;
+  width: 50%;
+  height: 100vh;
+  background-color: #319c89;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  z-index: 99;
+}
+
+.hamburger a {
+  color: #242424;
+  font-size: 1.5em;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.hamburger a:hover,
+.hamburger a.active {
+  color: #fff;
+}
+
+.hamburger.open {
+  transform: translateX(-100%);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Shadow effect */
+  display: none; /* Hidden by default */
+  z-index: 5; /* Ensure the overlay is below the hamburger menu */
+}
+
+.overlay.open {
+  display: block; /* Show the overlay when the menu is open */
+}
+
+.menuIcon:hover {
+  color: #319c89;
+}
+/* .nanooka {
+  display: none;
+} */
+.nanooka {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 20px;
+  /* margin-left: 3rem; */
 }
 
 .container {
@@ -248,7 +323,7 @@ li::marker {
 }
 
 .email-form input[type="submit"] {
-  margin-top: 8px;
+  margin-top: 16px;
   height: 40px;
   width: 105%;
   cursor: pointer;
@@ -287,10 +362,18 @@ a.active {
   color: white;
 }
 .link-to-projects {
-  transition: 0.3s;
+  /* transition: 0.3s; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.link-to-projects:hover {
-  transform: translateX(5%);
+
+.svg-icon {
+  transition: 0.2s;
+  margin-top: 6px;
+}
+.link-to-projects:hover .svg-icon {
+  transform: translateX(15%);
 }
 
 .repo:hover {
@@ -321,7 +404,20 @@ a.active {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1.5rem;
+  }
+  .navlinks {
+    display: none; /* Hide the large screen links */
+  }
+
+  .menuIcon {
+    display: block; /* Show the hamburger menu */
+  }
+}
+
+@media (min-width: 769px) {
   .container {
     margin: 6rem;
   }
@@ -329,6 +425,10 @@ a.active {
   .anchor:hover {
     color: white;
     text-decoration: underline;
+  }
+  .menuIcon,
+  .hamburger {
+    display: none;
   }
 }
 
@@ -363,16 +463,16 @@ a.active {
     float: none;
   }
 
-  .navbar {
+  /* .navbar {
     justify-content: space-between;
-  }
-  .nanooka {
+  } */
+  /* .nanooka {
     display: flex;
     align-items: center;
     gap: 3px;
     font-size: 20px;
     margin-left: 3rem;
-  }
+  } */
   .card {
     flex-direction: row;
     margin-top: 80px;
@@ -411,9 +511,7 @@ a.active {
     flex-direction: column;
     width: 50%;
   }
-  .email-form input[type="submit"] {
-    margin-top: 16px;
-  }
+
   .archive-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
