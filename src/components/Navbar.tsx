@@ -26,7 +26,7 @@ export default function Navbar() {
         </div>
       </NavLink>
       <div className="navlinks">
-        <NavLink to={"/"} style={{ textAlign: "center" }}>
+        <NavLink to={"/aboutme"} style={{ textAlign: "center" }}>
           About Me
         </NavLink>
         <NavLink to={"/projects"}>Projects</NavLink>
@@ -39,7 +39,11 @@ export default function Navbar() {
         &#9776;
       </div>
       <div className={`hamburger ${isMenuOpen ? "open" : ""}`}>
-        <NavLink to={"/"} style={{ textAlign: "center" }} onClick={closeMenu}>
+        <NavLink
+          to={"/aboutme"}
+          style={{ textAlign: "center" }}
+          onClick={closeMenu}
+        >
           About Me
         </NavLink>
         <NavLink to={"/projects"} onClick={closeMenu}>
