@@ -76,6 +76,34 @@ export default function AboutMe() {
       </AnimatedSection> */}
 
       <AnimatedSection>
+        <section>
+          <h2>Technologies I Work With</h2>
+          <div className="stack-section">
+            <div className="frontend">
+              <span>Frontend</span>
+              <ul>
+                <li>React (Vite, React Router)</li>
+                <li>Next.js</li>
+                <li>TypeScript, JavaScript</li>
+                <li>HTML5, CSS3, SASS</li>
+                <li>Tailwind CSS, Bootstrap</li>
+              </ul>
+            </div>
+            <div className="backend">
+              <span>Backend</span>
+              <ul>
+                <li>Node.js, Express</li>
+                <li>MongoDB, Prisma</li>
+                <li>RESTful APIs, Postman</li>
+                <li>WebSockets, Socket.IO</li>
+                <li>Authentication (JWT, bcrypt, Google OAuth)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </AnimatedSection>
+
+      {/* <AnimatedSection>
         <section className="stack-section">
           <h2>Technologies I Work With</h2>
           <div className="stack-icons">
@@ -105,9 +133,9 @@ export default function AboutMe() {
             ))}
           </div>
         </section>
-      </AnimatedSection>
+      </AnimatedSection> */}
 
-      <AnimatedSection>
+      {/* <AnimatedSection>
         <section className="about-cta">
           <p>
             Want to see my code in action? Check out my latest projects or drop
@@ -124,7 +152,7 @@ export default function AboutMe() {
             </Link>
           </div>
         </section>
-      </AnimatedSection>
+      </AnimatedSection> */}
     </div>
   );
 }
