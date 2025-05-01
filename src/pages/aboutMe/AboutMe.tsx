@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { HiArrowSmRight } from "react-icons/hi";
+// import { HiArrowSmRight } from "react-icons/hi";
 import AnimatedSection from "../../components/AnimatedSection";
 import "./aboutme.css";
 import { MdOutlineFileDownload } from "react-icons/md";
