@@ -59,8 +59,8 @@
   position: absolute;
   /* top: 10px;
     left: 10px; */
-  top: 8px;
-  left: 8px;
+  top: 7px;
+  left: 7px;
   transition: transform 0.1s ease;
   border: 4px solid #5f4a37;
 }
@@ -101,7 +101,8 @@ h1 {
   /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
-  margin-top: 140px;
+  /* margin-top: 140px; */
+  margin-top: 60px;
   /* padding: 0 20px; */
   gap: 120px;
 }
@@ -115,8 +116,12 @@ h1 {
 .skill-slider {
   overflow: hidden;
   width: 100%;
-  margin-top: 40px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.503);
+  gap: 20px;
 }
 
 .skill-slider::before,
@@ -142,7 +147,8 @@ h1 {
 
 .slider-track {
   display: flex;
-  width: fit-content;
+  /* width: fit-content; */
+  width: max-content;
   animation: scroll 20s linear infinite;
 }
 
@@ -151,7 +157,7 @@ h1 {
   height: 48px;
   margin: 0 20px;
   flex-shrink: 0;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
   cursor: pointer;
 }
 
@@ -163,7 +169,47 @@ h1 {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+}
+
+/* .latest-project-container .cta-projects {
+  margin-top: 50px;
+} */
+
+.latest-project-container .see-more-projects {
+  margin-top: 50px;
+  /* text-decoration: underline; */
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.see-more-projects .arrow-icon {
+  transition: 0.2s;
+  width: 24px;
+  height: 24px;
+}
+.see-more-projects:hover .arrow-icon {
+  transform: translateX(15%);
+}
+
+.fun-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  gap: 30px;
+}
+
+.fun-zone h3 {
+  font-size: 1.5em;
+  color: #319c89;
+}
+
+.fun-zone p,
+.fun-zone h3 {
+  margin: 0;
 }
 
 @keyframes scroll {
@@ -201,8 +247,19 @@ h1 {
     margin-top: 40px;
   }
 
+  .about-me {
+    display: flex;
+    flex-direction: column;
+  }
+
   .about-skills-section p {
     text-align: center;
+  }
+
+  .skill-slider {
+    /* margin-left: 40px; */
+    /* margin-right: 40px; */
+    width: 80%;
   }
 
   .latest-project-container {

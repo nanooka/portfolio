@@ -1,6 +1,5 @@
 import Card from "../components/Card";
 import { Link } from "react-router-dom";
-import { ScrollToTop } from "./home/Home";
 import AnimatedSection from "../components/AnimatedSection";
 import { HiArrowSmRight } from "react-icons/hi";
 
@@ -29,7 +28,7 @@ export default function Projects() {
               dynamic
               <b> React Leaflet</b> map, post their own, chat with authors in
               real time via<b> Socket.IO</b>, or just save favorites to a
-              wishlist. (still in building process)
+              wishlist.
             </span>
           }
           live="https://prime-estate-nanooka.netlify.app"
@@ -120,11 +119,7 @@ export default function Projects() {
           <HiArrowSmRight className="arrow-icon" />
         </Link>
 
-        <Link
-          to={"/archive"}
-          onClick={ScrollToTop}
-          className="link-to-projects"
-        >
+        <Link to={"/archive"} className="link-to-projects">
           <span>See my early JavaScript projects</span>
           <HiArrowSmRight className="arrow-icon" />
         </Link>

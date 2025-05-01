@@ -1,20 +1,11 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import { useTypewriter } from "../../useTypewriter";
 import { motion } from "framer-motion";
 import AnimatedSection from "../../components/AnimatedSection";
 import "./home.css";
 import { HiArrowSmRight } from "react-icons/hi";
 import Card from "../../components/Card";
-
-export const ScrollToTop = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-};
 
 export default function Home() {
   const leftEyeRef = useRef(null);
@@ -54,7 +45,7 @@ export default function Home() {
   }, []);
 
   const typeText = useTypewriter(
-    "A Full-Stack developer who loves making plain and user-friendly websites.",
+    "Full-Stack Developer who builds fast, user-friendly, and modern web apps.",
     80
   );
 
@@ -79,7 +70,7 @@ export default function Home() {
         </div>
 
         <div className="avatar-container">
-          <img src="/avatar.svg" alt="" />
+          <img src="/avatar.svg" alt="avatar of Nanooka" />
           <div className="eye-container">
             <div className="eye" ref={leftEyeRef}>
               <div className="pupil" ref={leftPupilRef}></div>
@@ -139,23 +130,28 @@ export default function Home() {
         </div>
       </div> */}
 
-      <Link to={"/projects"} onClick={ScrollToTop} className="cta-projects">
+      {/* <Link to={"/projects"} className="cta-projects">
         <span>Check out my projects </span>
         <HiArrowSmRight className="arrow-icon" />
-      </Link>
+      </Link> */}
 
       <div className="about-skills-section">
-        <p>
-          {/* I am a Frontend Developer enthusiastic about coding. I have created many
-        of my own projects and also I have experience in teamwork. I absorb new
-        technologies easily and I’m good at problem-solving. I’m trying to learn
-        something new every day to be better and better... */}
-          I'm a Full-Stack Developer who enjoys turning ideas into user-friendly
-          interfaces. I build fast, responsive, and clean web apps using modern
-          tools.
-        </p>
+        <div className="about-me">
+          <p>
+            I build responsive, high-performance web applications with a focus
+            on clean design and smooth user experience. I work mainly with
+            React, Node.js, and MongoDB.
+          </p>
+
+          <Link to={"/aboutme"} className="cta-projects">
+            <span>Learn More About Me</span>
+            <HiArrowSmRight className="arrow-icon" />
+          </Link>
+        </div>
 
         <div className="skill-slider">
+          <h3 className="section-label">Tech Stack</h3>
+
           <div className="slider-track">
             {[
               "react",
@@ -163,9 +159,13 @@ export default function Home() {
               "typescript",
               "html5",
               "css3",
+              "sass",
+              "tailwindcss",
               "nodejs",
+              "express",
               "javascript",
               "mongodb",
+              "prisma",
             ].map((skill) => (
               <img
                 key={skill}
@@ -181,9 +181,13 @@ export default function Home() {
               "typescript",
               "html5",
               "css3",
+              "sass",
+              "tailwindcss",
               "nodejs",
+              "express",
               "javascript",
               "mongodb",
+              "prisma",
             ].map((skill) => (
               <img
                 key={skill}
@@ -206,21 +210,13 @@ export default function Home() {
               alt: "PrimeEstate website preview",
             }}
             describe={
-              <span className="describe">
-                A full-stack real estate platform with a responsive UI and
-                light/dark theme support. Users can sign up securely with
-                email/password using <b>JWT</b> or log in via{" "}
-                <b>Google OAuth 2.0 </b>
-                (Google Cloud Console). Passwords are hashed with <b>
-                  bcrypt
-                </b>{" "}
-                for strong security. Properties can be filtered by location,
-                price, area, and type (rent/sale). Users can view listings on a
-                dynamic
-                <b> React Leaflet</b> map, post their own, chat with authors in
-                real time via<b> Socket.IO</b>, or just save favorites to a
-                wishlist. (still in building process)
-              </span>
+              <ul className="project-highlights">
+                <li>Responsive full-stack platform for real estate listings</li>
+                <li>Auth via JWT or Google OAuth 2.0</li>
+                <li>Dynamic filters for location, price, area, and type</li>
+                <li>Interactive map using React Leaflet</li>
+                <li>Real-time chat via Socket.IO</li>
+              </ul>
             }
             live="https://prime-estate-nanooka.netlify.app"
             repo="https://github.com/nanooka/real-estate"
@@ -240,6 +236,26 @@ export default function Home() {
               "Google OAuth",
             ]}
           />
+        </AnimatedSection>
+        {/* <Link to={"/projects"} className="cta-projects">
+          <span>Check out other projects </span>
+          <HiArrowSmRight className="arrow-icon" />
+        </Link> */}
+        <Link to={"/projects"} className="see-more-projects">
+          <span>See More Projects</span>
+          <HiArrowSmRight className="arrow-icon" />
+        </Link>
+      </div>
+
+      <div className="fun-zone">
+        <h3>Need a Quick Break?</h3>
+        <p>I’ve got a little surprise for you.</p>
+        <AnimatedSection>
+          <Link to="/gameZone" className="cta-projects">
+            {/* <span>Click Here to Explore</span> */}
+            <span>Discover the Surprise</span>
+            {/* <HiArrowSmRight className="arrow-icon" /> */}
+          </Link>
         </AnimatedSection>
       </div>
 

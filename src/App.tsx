@@ -5,10 +5,13 @@ import Navbar from "./components/Navbar";
 import Archive from "./pages/Archive";
 import Home from "./pages/home/Home";
 import AboutMe from "./pages/aboutMe/AboutMe";
+import ScrollToTop from "./components/ScrollToTop";
+import GameZone from "./pages/gameZone/GameZone";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -16,6 +19,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/archive" element={<Archive />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/gameZone" element={<GameZone />} />
       </Routes>
     </BrowserRouter>
   );
