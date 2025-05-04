@@ -210,13 +210,28 @@ export default function Home() {
               alt: "PrimeEstate website preview",
             }}
             describe={
-              <ul className="project-highlights">
-                <li>Responsive full-stack platform for real estate listings</li>
-                <li>Auth via JWT or Google OAuth 2.0</li>
-                <li>Dynamic filters for location, price, area, and type</li>
-                <li>Interactive map using React Leaflet</li>
-                <li>Real-time chat via Socket.IO</li>
-              </ul>
+              // <ul className="project-highlights">
+              //   <li>Responsive full-stack platform for real estate listings</li>
+              //   <li>Auth via JWT or Google OAuth 2.0</li>
+              //   <li>Dynamic filters for location, price, area, and type</li>
+              //   <li>Interactive map using React Leaflet</li>
+              //   <li>Real-time chat via Socket.IO</li>
+              // </ul>
+              <span className="describe">
+                A full-stack real estate platform with a responsive UI and
+                light/dark theme support. Users can sign up securely with
+                email/password using <b>JWT</b> or log in via{" "}
+                <b>Google OAuth 2.0 </b>
+                (Google Cloud Console). Passwords are hashed with <b>
+                  bcrypt
+                </b>{" "}
+                for strong security. Properties can be filtered by location,
+                price, area, and type (rent/sale). Users can view listings on a
+                dynamic
+                <b> React Leaflet</b> map, post their own, chat with authors in
+                real time via<b> Socket.IO</b>, or just save favorites to a
+                wishlist.
+              </span>
             }
             live="https://prime-estate-nanooka.netlify.app"
             repo="https://github.com/nanooka/real-estate"

@@ -81,7 +81,7 @@
   line-height: 1.6;
 }
 
-section {
+/* section {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
@@ -96,7 +96,7 @@ section {
 }
 
 .stack-section > div {
-  flex: 1 1 250px; /* allow them to shrink and wrap, but not be too narrow */
+  flex: 1 1 250px; 
   max-width: 300px;
 }
 
@@ -110,9 +110,8 @@ section {
 .stack-section li {
   margin-top: 8px;
   font-size: 1.1rem;
-  /* min-width: max-content; */
   word-break: break-word;
-}
+} */
 
 .about-cta {
   text-align: center;
@@ -125,14 +124,154 @@ section {
   margin-top: 1rem;
 }
 
+.tech-stack-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech-stack-section .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.tech-card {
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* .tech-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.tech-card:nth-child(2) {
+  animation-delay: 0.3s;
+} */
+
+/* .tech-card:hover {
+  transform: translateY(-5px);
+} */
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pill-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pill {
+  background-color: rgba(49, 156, 137, 0.1);
+  color: #319c89;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.pill:hover {
+  background-color: #319c89;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.cta-contact {
+  font-size: 1.2rem;
+}
+
+/*  */
+
+/* .experience {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.job-item {
+  background: #2a2a2a;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.job-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.responsibilities {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.responsibilities li {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 0.5rem;
+}
+
+.technologies {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #aaa;
+} */
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 531px) {
   .stack-section {
     flex-direction: column;
     padding-right: 20px;
   }
-  /* .backend {
-    margin-top: 40px;
-  } */
 }
 
 @media (max-width: 768px) {
@@ -150,12 +289,6 @@ section {
     height: auto;
   }
 
-  /* .photo {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-
-  } */
   .photo {
     border-radius: 10px;
   }
@@ -175,5 +308,9 @@ section {
 @media (min-width: 769px) {
   .about-me-page h1 {
     margin-top: -100px;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
