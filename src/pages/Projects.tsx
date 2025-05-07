@@ -2,11 +2,19 @@ import Card from "../components/Card";
 import { Link } from "react-router-dom";
 import AnimatedSection from "../components/AnimatedSection";
 import { HiArrowSmRight } from "react-icons/hi";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
-    <div className="container">
-      <h2>My Projects</h2>
+    <div className="container project-page">
+      <motion.h1
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true, amount: 1 }}
+      >
+        My Projects
+      </motion.h1>
       <AnimatedSection>
         <Card
           title="PrimeEstate"

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-// import { HiArrowSmRight } from "react-icons/hi";
 import AnimatedSection from "../../components/AnimatedSection";
 import "./aboutme.css";
 import { MdOutlineFileDownload } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const techData = [
   {
@@ -32,7 +32,16 @@ const techData = [
 export default function AboutMe() {
   return (
     <div className="container about-me-page">
-      <h1>About Me</h1>
+      {/* <h1>About Me</h1> */}
+
+      <motion.h1
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true, amount: 1 }}
+      >
+        About Me
+      </motion.h1>
 
       <AnimatedSection>
         <div className="about-me-container">
@@ -80,11 +89,20 @@ export default function AboutMe() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection>
-        <section className="tech-stack-section">
-          <h2 className="title">Technologies I Work With</h2>
-          <div className="tech-grid">
-            {techData.map((section) => (
+      <section className="tech-stack-section">
+        <motion.h2
+          className="title"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true, amount: 1 }}
+        >
+          Technologies I Work With
+        </motion.h2>
+        {/* <h2 className="title">Technologies I Work With</h2> */}
+        <div className="tech-grid">
+          {techData.map((section) => (
+            <AnimatedSection>
               <div className="tech-card" key={section.title}>
                 <h3 className="card-title">
                   <span>{section.emoji}</span> {section.title}
@@ -97,63 +115,23 @@ export default function AboutMe() {
                   ))}
                 </div>
               </div>
-            ))}
-          </div>
-        </section>
-      </AnimatedSection>
+            </AnimatedSection>
+          ))}
+        </div>
+      </section>
 
-      <AnimatedSection>
-        <Link to="/contact" className="cta-projects cta-contact">
+      {/* <AnimatedSection> */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true, amount: 1 }}
+      >
+        <Link to="/contact" className="cta-btn cta-contact">
           Get in Touch
         </Link>
-      </AnimatedSection>
-
-      {/* <AnimatedSection>
-        <section className="experience">
-          <h2 className="section-title">Experience</h2>
-          <div className="job-list">
-            <div className="job-item">
-              <h3 className="job-title">Frontend Developer</h3>
-              <p className="company">XYZ Corp. | Jan 2023 - Present</p>
-              <ul className="responsibilities">
-                <li>
-                  Developed interactive user interfaces with React and Redux
-                </li>
-                <li>
-                  Collaborated with UX/UI designers to improve user experience
-                </li>
-                <li>
-                  Implemented unit tests with Jest and React Testing Library
-                </li>
-              </ul>
-              <p className="technologies">
-                Technologies Used: React, Redux, JavaScript, SCSS, Node.js
-              </p>
-            </div>
-
-            <div className="job-item">
-              <h3 className="job-title">Junior Web Developer</h3>
-              <p className="company">ABC Technologies | Jun 2021 - Dec 2022</p>
-              <ul className="responsibilities">
-                <li>
-                  Built responsive web pages using HTML, CSS, and JavaScript
-                </li>
-                <li>
-                  Worked with RESTful APIs and integrated them into frontend
-                  applications
-                </li>
-                <li>
-                  Maintained codebase and optimized performance for faster load
-                  times
-                </li>
-              </ul>
-              <p className="technologies">
-                Technologies Used: HTML5, CSS3, JavaScript, Node.js
-              </p>
-            </div>
-          </div>
-        </section>
-      </AnimatedSection> */}
+      </motion.div>
+      {/* </AnimatedSection> */}
     </div>
   );
 }

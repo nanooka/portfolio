@@ -73,6 +73,7 @@ li::marker {
   box-shadow: 0 4px 2px -2px rgba(99, 99, 99, 0.7);
   padding: 1.5rem 5rem;
 }
+
 .navlinks {
   display: flex;
   justify-content: center;
@@ -146,6 +147,29 @@ li::marker {
 
 .container {
   margin: 1rem;
+}
+
+.archive {
+  display: flex;
+  flex-direction: column;
+}
+
+.archive h1 {
+  align-self: center;
+  font-size: 2rem;
+}
+
+.project-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-page h1 {
+  align-self: center;
+}
+
+.project-page a {
+  max-width: fit-content;
 }
 
 .archive-container {

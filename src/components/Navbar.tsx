@@ -31,7 +31,6 @@ export default function Navbar() {
         </NavLink>
         <NavLink to={"/projects"}>Projects</NavLink>
         <NavLink to={"/contact"}>Contact</NavLink>
-        <NavLink to={"/gameZone"}>Game Zone</NavLink>
       </div>
       <div
         className={`menuIcon ${isMenuOpen ? "open" : ""}`}
@@ -56,7 +55,6 @@ export default function Navbar() {
         <NavLink to={"/contact"} onClick={closeMenu}>
           Contact
         </NavLink>
-        <NavLink to={"/gameZone"}>Game Zone</NavLink>
       </div>
       <div
         className={`overlay ${isMenuOpen ? "open" : ""}`}

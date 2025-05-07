@@ -1,10 +1,19 @@
 import CardArchive from "../components/CardArchive";
 import AnimatedSection from "../components/AnimatedSection";
+import { motion } from "framer-motion";
 
 export default function Archive() {
   return (
-    <div className="container">
-      <h2>Little JavaScript Projects</h2>
+    <div className="container archive">
+      <motion.h1
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true, amount: 1 }}
+      >
+        Little JavaScript Projects
+      </motion.h1>
+      {/* <h2>Little JavaScript Projects</h2> */}
       <div className="archive-container">
         <AnimatedSection>
           <CardArchive

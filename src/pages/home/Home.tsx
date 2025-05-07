@@ -82,72 +82,25 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div>
-        <p className="skills-p">Skills:</p>
-
-        <div className="skills-container main">
-          <div className="skills-container">
-            <div className="skills-section">
-              <span>Frontend</span>
-              <ul>
-                <li>React-Vite</li>
-                <li>React Query</li>
-                <li>Next.js</li>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SASS</li>
-                <li>Tailwind</li>
-                <li>Bootstrap</li>
-              </ul>
-            </div>
-
-            <div className="skills-section">
-              <span>Backend</span>
-              <ul>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-                <li>Mongoose</li>
-                <li>Prisma</li>
-                <li>RESTful API</li>
-                <li>Socket.io</li>
-                <li>JWT</li>
-                <li>bcrypt</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="skills-section">
-            <span>Tools</span>
-            <ul>
-              <li>Git/Github</li>
-              <li>Postman</li>
-              <li>Figma</li>
-            </ul>
-          </div>
-        </div>
-      </div> */}
-
-      {/* <Link to={"/projects"} className="cta-projects">
-        <span>Check out my projects </span>
-        <HiArrowSmRight className="arrow-icon" />
-      </Link> */}
-
       <div className="about-skills-section">
-        <div className="about-me">
+        <motion.div
+          className="about-me"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true, amount: 1 }}
+        >
           <p>
             I build responsive, high-performance web applications with a focus
             on clean design and smooth user experience. I work mainly with
             React, Node.js, and MongoDB.
           </p>
 
-          <Link to={"/aboutme"} className="cta-projects">
+          <Link to={"/aboutme"} className="cta-btn">
             <span>Learn More About Me</span>
             <HiArrowSmRight className="arrow-icon" />
           </Link>
-        </div>
+        </motion.div>
 
         <div className="skill-slider">
           <h3 className="section-label">Tech Stack</h3>
@@ -210,13 +163,6 @@ export default function Home() {
               alt: "PrimeEstate website preview",
             }}
             describe={
-              // <ul className="project-highlights">
-              //   <li>Responsive full-stack platform for real estate listings</li>
-              //   <li>Auth via JWT or Google OAuth 2.0</li>
-              //   <li>Dynamic filters for location, price, area, and type</li>
-              //   <li>Interactive map using React Leaflet</li>
-              //   <li>Real-time chat via Socket.IO</li>
-              // </ul>
               <span className="describe">
                 A full-stack real estate platform with a responsive UI and
                 light/dark theme support. Users can sign up securely with
@@ -252,41 +198,18 @@ export default function Home() {
             ]}
           />
         </AnimatedSection>
-        {/* <Link to={"/projects"} className="cta-projects">
-          <span>Check out other projects </span>
-          <HiArrowSmRight className="arrow-icon" />
-        </Link> */}
-        <Link to={"/projects"} className="see-more-projects">
+        <Link to={"/projects"} className="cta-btn projects-btn">
           <span>See More Projects</span>
           <HiArrowSmRight className="arrow-icon" />
         </Link>
       </div>
 
-      <div className="fun-zone">
-        <h3>Need a Quick Break?</h3>
-        <p>I’ve got a little surprise for you.</p>
-        <AnimatedSection>
-          <Link to="/gameZone" className="cta-projects">
-            {/* <span>Click Here to Explore</span> */}
-            <span>Discover the Surprise</span>
-            {/* <HiArrowSmRight className="arrow-icon" /> */}
-          </Link>
-        </AnimatedSection>
-      </div>
-
-      {/* <div>
-        <p style={{ color: "#319c89" }}>Certificates: </p>
-        <a
-          className="certificate-link"
-          href="https://certificates.cs50.io/f6e4bbb1-65b3-40aa-88d8-d47ca72298f4.pdf?size=letter"
-          target="_blank"
-          style={{ whiteSpace: "normal", overflowWrap: "break-word" }}
-        >
-          <b>Harvard CS50x Certificate</b>
-        </a>
+      {/* <div className="contact-cta">
+        <p>Want to build something together?</p>
+        <Link to="/contact" className="cta-btn">
+          Let's Talk
+        </Link>
       </div> */}
-      {/* <div className="green-circle"></div>
-      <div className="white-circle"></div> */}
     </div>
   );
 }
