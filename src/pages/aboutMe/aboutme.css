@@ -117,15 +117,18 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  row-gap: 4rem;
+  height: fit-content;
 }
 
 .tech-card {
   background: #1f1f1f;
   padding: 2rem;
+  padding-bottom: 0;
   border-radius: 1rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-
+  height: 100%;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.6s ease forwards;

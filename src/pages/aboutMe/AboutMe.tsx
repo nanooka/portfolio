@@ -17,14 +17,15 @@ const techData = [
     ],
   },
   {
-    title: "Backend",
+    title: "Backend & Database",
     emoji: "🛠️",
     items: [
+      "Python, Flask",
       "Node.js, Express",
-      "MongoDB, Prisma",
-      "RESTful APIs, Postman",
+      "PostreSQL, MongoDB, Prisma",
+      // "RESTful APIs, Postman",
       "WebSockets, Socket.IO",
-      "Authentication (JWT, bcrypt, Google OAuth)",
+      "Auth(JWT, bcrypt, Google OAuth)",
     ],
   },
 ];
@@ -72,9 +73,16 @@ export default function AboutMe() {
                 problem-solving.
               </p>
               <p>
-                Now I build responsive full-stack web applications using tools
-                like React, Node.js, MongoDB, and Prisma. I care about writing
-                clean code and crafting intuitive user experiences.
+                Currently, I am studying Computer Science at{" "}
+                <strong>Central Piedmont Community College (CPCC)</strong>, in a
+                transfer program to{" "}
+                <strong>
+                  University of North Carolina at Charlotte (UNCC)
+                </strong>
+                . At the same time, I build responsive full-stack web
+                applications using tools like React, Node.js, MongoDB, and
+                Prisma. I care about writing clean code and crafting intuitive
+                user experiences.
               </p>
             </div>
             <a
